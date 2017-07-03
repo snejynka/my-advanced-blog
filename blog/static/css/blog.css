@@ -1,0 +1,16 @@
+a {
+        color: coral;
+        font-family: 'Lobster';
+    }
+
+body {
+        padding-left: 30px;
+    }
+
+h3 {
+	display: inline-block;
+	padding: 2px;
+	border-radius: 5px;
+	background: #15b17f linear-gradient(270deg, #9acd5a, #15b17f);
+	text-decoration: none;
+}
