@@ -1,4 +1,5 @@
 {% load staticfiles %}
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Blog from Anya</title>
@@ -6,12 +7,14 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
+
 <body>
-    <div>
-    	<h1><a href="https://s-media-cache-ak0.pinimg.com/736x/1c/dc/13/1cdc138d1eff74e714389eb165cae5bb.jpg">My Super Blog
-    	
-    	</a></h1>
-    	<p><strong  style="color: red">published</strong>: 14.06.2017, 15:15</p>
+     
+         <div class="page-header">
+             <h1><a href="https://s-media-cache-ak0.pinimg.com/736x/1c/dc/13/1cdc138d1eff74e714389eb165cae5bb.jpg">My Super Blog</a></h1>
+         </div>
+
+         <p><strong>published</strong>: 14.06.2017, 15:15</p>
     </div>
         <h2><a href="https://play.google.com/music/preview/Tta7hqskne4rbgnyxtoosjvt4mi?lyrics=1&utm_source=google&utm_medium=search&utm_campaign=lyrics&pcampaignid=kp-lyrics">First post</a></h2>
     <h3><ul>Supergirl <em>(Reamonn)</em></ul></h3>
@@ -43,10 +46,10 @@
             <div>
 
             <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-           
-    </body>
+    
+</body>
 </html>

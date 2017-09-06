@@ -1,11 +1,20 @@
 a {
-        color: coral;
+        color: #ad3737;
         font-family: 'Lobster';
     }
 
 body {
-        padding-left: 30px;
-    }
+    background: url('../img/supergirl_logo.jpg') no-repeat center fixed;
+    height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+h2 {
+    padding: 0px 0px 0px 70px;
+}
 
 h3 {
 	display: inline-block;
@@ -14,3 +23,21 @@ h3 {
 	background: #15b17f linear-gradient(270deg, #9acd5a, #15b17f);
 	text-decoration: none;
 }
+
+.page-header {
+        background-color: #2f6474;
+        margin-top: 0;
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
